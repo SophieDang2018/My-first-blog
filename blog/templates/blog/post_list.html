@@ -20,7 +20,7 @@
       <div>
         <p> published: {{ post.published_date }}</p>
         <h2><a href=""><em>{{ post.title }}</em></a></h2>
-        <p>{{ post.text }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
       </div>
     {% endfor %}
 </body>
