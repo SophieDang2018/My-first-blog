@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Django girl blog</title>
+  </head>
+  <body>
+    <h1> Explore a wonderland with Coding!!!</h1>
+  <br>
+    <h2> Where you can learn about coding from the beginning</h2>
+    <div>
+      <h3> Hope you enjoy and learn something useful for your future career ^^~</h3>
+    </div>
+  <p>Hi there!</p>
+  <br>
+  <p>Welcome to <strong>My first blog</strong>
+    <br>
+      Leave your comment here about <em>what you want to learn</em>
+    </p>
+
+    {% for post in posts %}
+      <div>
+        <p> published: {{ post.published_date }}</p>
+        <h2><a href=""><em>{{ post.title }}</em></a></h2>
+        <p>{{ post.text }}</p>
+      </div>
+    {% endfor %}
+</body>
+</html>
